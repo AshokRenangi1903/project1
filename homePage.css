@@ -1,0 +1,321 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*navigation bar*/
+nav{
+    display: flex;
+    padding: 1vw 6vw;
+    position: fixed;
+    background-color: white;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    
+}
+nav img{
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+}
+nav .navigation ul{
+    display: flex;
+    
+}
+nav .navigation ul li{
+    margin-left: 50px;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bold;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color: #3333cc;
+    padding-left: 30px;
+}
+nav .navigation ul li a:hover{
+    color: #009999;
+    transition: 0.3s ease;
+}
+
+/*home*/
+
+.home{
+    background-image: url("image.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.home h2{
+    color: blue;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    padding-top: 30px;
+     
+}
+.home p{
+    color: white;
+    font-size: 1.5rem;
+    width: 50%;
+    line-height: 35px;
+    
+}
+.home a{
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.home .btn #blue{
+    color: white;
+    background-color: blue;
+}
+.home .btn #blue:hover{
+    color:blue;
+    background-color: white;
+    transition: 0.3s ease;
+}
+.home .btn #green{
+    color: white;
+    background-color: green;
+}
+.home .btn #green:hover{
+    color:green;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+/*features*/
+
+.features{
+    padding: 5vw 0vw 8vw 8vw;
+    text-align: center;
+    background-color: rgb(171, 238, 238);
+}
+.features h1{   
+    color: #3333cc;
+    font-size: 30px;
+}
+.features p{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.features .cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+/*box1*/
+.features .box1{
+    text-align: start;
+    background-color: #e6f2ff;
+    width: 30%;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+.features .box1 i{
+    font-size: 70px;
+    color:#3333cc ;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.features .box1 h3{
+    color:#3333cc;
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 30px;
+}
+.features .box1 p{
+    color:black;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/*box2*/
+.features .box2{
+    text-align: start;
+    background-color: #e6f2ff;
+    width: 30%;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+.features .box2 i{
+    font-size: 70px;
+    color:#3333cc ;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.features .box2 h3{
+    color:#3333cc;
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 30px;
+}
+.features .box2 p{
+    color:black;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/*box3*/
+.features .box3{
+    text-align: start;
+    background-color: #e6f2ff;
+    width: 30%;
+    border-radius: 15px;
+}
+.features .box3 i{
+    font-size: 70px;
+    color:#3333cc ;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.features .box3 h3{
+    color:#3333cc;
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 30px;
+}
+.features .box3 p{
+    color:black;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*courses*/
+
+.courses{
+    padding: 5vw 8vw 1vw 8vw;
+    background-color: #99ff66;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.courses h1{
+    color: #3333cc;
+    font-size: 40px;
+}
+.courses p{
+    font-size: 20px;
+}
+
+.courses .allCourses{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    text-align: start;
+}
+.courses .allCourses img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.courses .allCourses .course{
+  border: 2px solid green;
+  border-radius: 20px;
+  background-color:bisque ;
+}
+.courses .allCourses .course .coursed{
+    background-color: bisque;
+    padding: 10px ;
+    border-radius: 20px;
+}
+
+/*contact*/
+.contact #con{
+    text-align: center;
+}
+.contact #con p{
+    font-size:50px;
+}
+.contact #con h3{
+    color: orangered;
+    font-size: 30px;
+}
+
+@media (max-width: 769px){
+    nav {
+        width: 100%;
+        justify-content: left;
+    }
+    nav .navigation ul{
+        padding-inline-start: 5px;
+    }
+    nav .navigation ul li a {
+        padding-left: 3px;
+    }
+    nav .navigation ul li {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    nav img {
+        width: 60px;
+        height: 60px;
+    }
+    .home p {
+        font-size: 2rem;
+        width: 90%;
+        line-height: 40px;
+    }
+    .home h2 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        padding-top: 0px;
+    }
+    .home .btn #blue {
+        font-size: 30px;
+    }
+    .home .btn #green {
+        font-size: 30px;
+    }
+    .features h1 {
+        font-size: 60px;
+    }
+    .features p {
+        font-size: 30px;
+        padding-right: 40px;
+    }
+    .features .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .features .box1 {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    .features .box2 {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    .features .box3 {
+        width: 95%;
+        margin-bottom: 20px;
+        margin-left: -20px;
+    }
+
+}
